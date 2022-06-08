@@ -11,4 +11,7 @@ import './styles/app.css';
 // start the Stimulus application
 //import './bootstrap';
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+// test
+import getNiceMessage from "./js/get_nice_message";
+
+document.querySelector('.app').textContent = getNiceMessage(5);
