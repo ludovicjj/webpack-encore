@@ -58,3 +58,16 @@ import getNiceMessage from "./js/get_nice_message";
 ````
 
 Contrairement à PHP, en JavaScript, chaque fichier que vous souhaitez utiliser ailleurs doit exporter quelque chose, comme une fonction, un objet ou même une chaîne.
+
+## Installation de Bootstrap
+
+`npm install bootstrap`
+
+Load bootstrap Javascript (app.js)
+```javascript
+import 'bootstrap';
+```
+Load bootstrap CSS (app.css)
+```css
+@import '~bootstrap';
+```

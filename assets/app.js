@@ -9,9 +9,15 @@
 import './styles/app.css';
 
 // start the Stimulus application
-//import './bootstrap';
+import './bootstrap';
 
-// test
-import getNiceMessage from "./js/get_nice_message";
+// load BOOTSTRAP's JavaScript
+// Remark: "import 'bootstrap'" will not work e.g for ToolTips
+import * as bootstrap from 'bootstrap';
 
-document.querySelector('.app').textContent = getNiceMessage(5);
+// activate BOOTSTRAP-Tooltip everywhere
+// see: https://getbootstrap.com/docs/5.1/components/tooltips/#example-enable-tooltips-everywhere
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
