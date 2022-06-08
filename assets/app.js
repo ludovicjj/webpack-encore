@@ -9,4 +9,6 @@
 import './styles/app.css';
 
 // start the Stimulus application
-import './bootstrap';
+//import './bootstrap';
+
+console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
