@@ -59,6 +59,12 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
 
+    // copying files
+    .copyFiles({
+        from: './assets/static',
+        to: 'static/[path][name].[hash:8].[ext]'
+    })
+
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
