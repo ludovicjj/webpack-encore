@@ -7,6 +7,7 @@
 
 {% block javascripts %}
     {{ parent() }}
+    {{ encore_entry_script_tags('home') }}
 {% endblock %}
 
 {% block body %}
@@ -15,7 +16,7 @@
             <div class="col col-bg">
                 Column
             </div>
-            <div class="col">
+            <div class="col second-col">
                 <i class="fa-solid fa-user"></i>
                 User
             </div>

@@ -13,3 +13,6 @@ import 'bootstrap'
 
 // start the Stimulus application
 //import './bootstrap';
+
+import getNiceMessage from './js/get_nice_message';
+console.log(getNiceMessage(5))
